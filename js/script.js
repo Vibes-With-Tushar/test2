@@ -61,7 +61,7 @@ function boxid() {
     });
 }
 async function fold() {
-    let p = await fetch(`css/Playlist`)
+    let p = await fetch(`https://github.com/Vibes-With-Tushar/vibes-with-tushar.github.io/test2/css/Playlist/`)
     console.log(p)
     let response = await p.text()
     let div = document.createElement("div");
