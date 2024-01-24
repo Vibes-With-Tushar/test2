@@ -1,0 +1,25 @@
+.df
+{
+    display: flex;
+
+}
+.justify-item{
+    justify-content: center;
+}
+.align-item
+{
+    align-items: center;
+}
+.br
+{
+    border-radius: 8px;
+}
+.sub-bg{
+    background-color: #121212;
+    /* background-color: hsl(0, 39%, 19%); */
+}
+.hov:hover{
+    cursor: pointer;
+    color: white;
+    fill: white;
+}
