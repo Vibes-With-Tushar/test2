@@ -14,7 +14,7 @@ let flag = 0;
 let y = [];
 let aname = [];
 let time = [];
-let p = await fetch(`/Playlist/${storedValue}/info.json`)
+let p = await fetch(`Playlist/${storedValue}/info.json`)
 let response = await p.json()
 ran(response.rgba[0], response.rgba[1], response.rgba[2], response.rgba[3])
 list(response.img, response.title, response.des)
