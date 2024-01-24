@@ -1,4 +1,4 @@
-import { playMusic } from "/listsrc.js";
+import { playMusic } from "./listsrc.js";
 import { currentsong } from '/listsrc.js';
 import { secondsToMMSS } from '/listsrc.js';
 console.log("Script")
