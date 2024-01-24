@@ -83,7 +83,7 @@ export function ran(no, n1, s, l) {
     });
 }
 export async function getSongs(x) {
-    let p = await fetch(`/Playlist/${x}/`)
+    let p = await fetch(`Playlist/${x}/`)
     let response = await p.text()
     // console.log(response);
     let div = document.createElement("div");
@@ -132,7 +132,7 @@ export function secondsToMMSS(seconds) {
 
 export let currentsong = new Audio();
 export function playMusic(track, pause = false, x) {
-    currentsong.src = (`/Playlist/${x}/` + track)
+    currentsong.src = (`Playlist/${x}/` + track)
     if (!pause) {
         setTimeout(() => {
 
