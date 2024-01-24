@@ -61,7 +61,7 @@ function boxid() {
     });
 }
 async function fold() {
-    let p = await fetch(`/Playlist/`)
+    let p = await fetch(`Playlist/`)
     let response = await p.text()
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -69,9 +69,9 @@ async function fold() {
     let arr = Array.from(anchors);
     let cardCont = document.querySelector(".albums");
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i].href.includes("/Playlist")) {
+        if (arr[i].href.includes("Playlist")) {
             let folder = (arr[i].href.split("/").slice(-2))[0];
-            let p = await fetch(`/Playlist/${folder}/info.json`)
+            let p = await fetch(`Playlist/${folder}/info.json`)
             let response = await p.json()
             cardCont.innerHTML = cardCont.innerHTML + `<div data-file="${folder}" class="box df br">
             <img class="ig df br" src="${response.img}" alt="img">
